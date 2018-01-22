@@ -2,7 +2,7 @@
 
 
 // require express
-const app = require("express");
+const app = require("express")();
 
 // fake posts to simulate database
 const posts =[

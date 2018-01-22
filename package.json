@@ -9,7 +9,7 @@
   "author": "Fady Makram <fady@coligo.io>",
   "license": "MIT",
   "dependencies": {
-    "ejs": "^2.4.1",
-    "express": "^4.13.4"
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
   }
 }

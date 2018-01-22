@@ -18,15 +18,16 @@
 
 <body>
   <div class="container">
-    <%- include('partials/nav') %>
+    <%= include('partials/nav') %>
     <div>
+      <!-- in app.js title is a key in the object under 'render' -->
       <h2><%= title %></h2>
       <p>by <a href="#"><%= author %></a></p>
 
       <p><%= body %></p>
       <hr>
     </div>
-    <%- include('partials/footer') %>
+    <%= include('partials/footer') %>
   </div>
 </body>
 
