@@ -18,7 +18,7 @@
 
 <body>
   <div class="container">
-    <%= include('partials/nav') %>
+    <%- include('partials/navbar') %>
     <div>
       <!-- in app.js title is a key in the object under 'render' -->
       <h2><%= title %></h2>
@@ -27,7 +27,7 @@
       <p><%= body %></p>
       <hr>
     </div>
-    <%= include('partials/footer') %>
+    <%- include('partials/footer') %>
   </div>
 </body>
 
