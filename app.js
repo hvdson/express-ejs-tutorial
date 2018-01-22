@@ -35,13 +35,19 @@ const posts =[
 // set the view engine to ejs
 app.set("view engine", "ejs");
 
+//since set to ejs engine don't need to specify /views path
+// express does it automatically
+// .ejs extention is also excluded
+
 app.get("/", (req, res) => {
   // render home.ejs with the list of posts
+  // 2nd argument accepts object - allows .ejs templates to use
   res.render("home", {posts: posts})
 });
 
 // blog post
 app.get("/post/:id", (req, res) => {
+  // find the hosts in the "posts" array
   const post = posts.filter((post) => {
     return post.id == req.params.id
   })[0]
